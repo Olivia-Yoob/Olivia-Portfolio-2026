@@ -851,6 +851,66 @@ html:not([data-theme="light"]) .theme-toggle__icon--moon {
   color: var(--slate);
 }
 
+.focus-item__meta {
+  margin: -0.2rem 0 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--slate);
+}
+
+.portfolio-lede {
+  font-size: 0.98rem !important;
+}
+
+.subsection-heading {
+  margin: 2rem 0 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.subsection-heading:first-child {
+  margin-top: 0;
+}
+
+.creds-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.creds-list > li {
+  margin: 0 0 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.creds-list > li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.creds-list__title {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-light);
+  line-height: 1.45;
+}
+
+.creds-list__meta {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.8125rem;
+  color: var(--slate);
+  line-height: 1.4;
+}
+
 /* Content cards (Education, Activities, Honors, Skills) ------------------- */
 
 .card {
