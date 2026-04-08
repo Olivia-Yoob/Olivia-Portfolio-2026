@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Olivia (Yoobin) Kim — IT Audit &amp; Data Analytics @ Deloitte. M.S. Information Systems Management (BIDA), Carnegie Mellon. Kyung Hee B.A. International Studies."
+    />
+    <title>Olivia (Yoobin) Kim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <p class="scroll-hint" id="scrollHint" aria-hidden="true">
+      <span class="scroll-hint__label">Scroll</span>
+      <span class="scroll-hint__track">
+        <span class="scroll-hint__knob"></span>
+      </span>
+    </p>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-topbar">
+      <div class="site-topbar__inner">
+        <p class="site-topbar__eyebrow">
+          <span class="site-topbar__dot" aria-hidden="true"></span>
+          <span class="site-topbar__eyebrow-text">Olivia (Yoobin) Kim</span>
+        </p>
+        <div class="site-topbar__actions" aria-label="Social links and theme">
+          <a
+            class="topbar-icon-btn"
+            href="https://github.com/Olivia-Yoob"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub — Olivia-Yoob"
+          >
+            <svg
+              class="topbar-icon-btn__svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a
+            class="topbar-icon-btn"
+            href="https://www.linkedin.com/in/yoobinkim27"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg
+              class="topbar-icon-btn__svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+          </a>
+          <button
+            type="button"
+            class="theme-toggle"
+            aria-label="Toggle light and dark theme"
+          >
+            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true"
+              >☀</span
+            >
+            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true"
+              >☾</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Introduction and site navigation">
+        <div class="sidebar__inner">
+          <header class="sidebar__header">
+            <h1 class="sidebar__name">
+              <a href="#">Olivia (Yoobin) Kim</a>
+            </h1>
+            <figure class="profile-card">
+              <div class="profile-card__glow" aria-hidden="true"></div>
+              <img
+                class="profile-card__img"
+                src="images/profile.png"
+                width="640"
+                height="853"
+                alt="Olivia (Yoobin) Kim"
+                decoding="async"
+                loading="eager"
+              />
+            </figure>
+            <ul class="sidebar__bio">
+              <li>🏙️ IT audit &amp; analytics @ Deloitte</li>
+              <li>🎓 MISM-BIDA @ Carnegie Mellon</li>
+              <li>🏠 Seoul → Pittsburgh</li>
+              <li>🏃🏻‍♀️ data, controls, and product sense</li>
+            </ul>
+          </header>
+
+          <nav class="side-nav" id="siteNav" aria-label="Section navigation">
+            <ul class="side-nav__list">
+              <li>
+                <a class="side-nav__link is-active" href="#about"
+                  ><span class="side-nav__rule" aria-hidden="true"></span
+                  >ABOUT</a
+                >
+              </li>
+              <li>
+                <a class="side-nav__link" href="#education"
+                  ><span class="side-nav__rule" aria-hidden="true"></span
+                  >EDUCATION</a
+                >
+              </li>
+              <li>
+                <a class="side-nav__link" href="#experience"
+                  ><span class="side-nav__rule" aria-hidden="true"></span
+                  >EXPERIENCE</a
+                >
+              </li>
+              <li>
+                <a class="side-nav__link" href="#activities"
+                  ><span class="side-nav__rule" aria-hidden="true"></span
+                  >ACTIVITIES</a
+                >
+              </li>
+              <li>
+                <a class="side-nav__link" href="#honors"
+                  ><span class="side-nav__rule" aria-hidden="true"></span
+                  >HONORS</a
+                >
+              </li>
+              <li>
+                <a class="side-nav__link" href="#skills"
+                  ><span class="side-nav__rule" aria-hidden="true"></span
+                  >SKILLS</a
+                >
+              </li>
+              <li>
+                <a class="side-nav__link" href="#connect"
+                  ><span class="side-nav__rule" aria-hidden="true"></span
+                  >CONNECT</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sidebar__bottom">
+            <ul class="social" aria-label="Social links">
+              <li>
+                <a
+                  href="https://github.com/Olivia-Yoob"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <svg
+                    class="social__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/yoobinkim27"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <svg
+                    class="social__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:yoobinkim27@gmail.com"
+                  class="social__link"
+                  aria-label="Email"
+                >
+                  <svg
+                    class="social__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                    />
+                    <path
+                      d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <main id="main" class="main">
+        <section id="about" class="section reveal" data-reveal>
+          <div class="section__header">
+            <h2 class="section__title">About</h2>
+          </div>
+          <div class="section__body">
+            <div class="about-copy">
+              <p>
+                I started my career in consulting, working across IT audit,
+                risk, and business process analysis. Through that experience, I
+                developed a strong interest in how data and systems influence
+                real business decisions.
+              </p>
+              <p>
+                I focus on turning complex business requirements into
+                structured, practical solutions that can be implemented and
+                scaled. My interests lie in product analytics, fintech, and
+                building decision-support systems that bridge business context
+                with technical execution.
+              </p>
+              <p>
+                I will join
+                <strong>Carnegie Mellon University</strong> for the
+                <strong
+                  >M.S. in Information Systems Management – Business
+                  Intelligence &amp; Data Analytics (BIDA) Track</strong
+                >
+                (Heinz College, Pittsburgh, PA; Sep 2026 – Jan 2028, expected),
+                while continuing hands-on work in SQL, analytics, and web-based
+                product experiments.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="section reveal" data-reveal>
+          <div class="section__header">
+            <h2 class="section__title">Education</h2>
+          </div>
+          <div class="section__body">
+            <ol class="exp-list exp-list--cards">
+              <li class="exp-item card">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">Carnegie Mellon University</h3>
+                  <p class="exp-item__dates">Sep 2026 – Jan 2028 (expected)</p>
+                </div>
+                <p class="exp-item__meta">Pittsburgh, PA, United States</p>
+                <p class="exp-item__desc">
+                  M.S. in Information Systems Management – Business Intelligence
+                  &amp; Data Analytics (BIDA) Track
+                </p>
+              </li>
+              <li class="exp-item card">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">Kyung Hee University</h3>
+                  <p class="exp-item__dates">2017 – 2023</p>
+                </div>
+                <p class="exp-item__meta">Seoul, Republic of Korea</p>
+                <p class="exp-item__desc">B.A. in International Studies</p>
+                <ul class="education-highlights">
+                  <li>
+                    <strong>CES 2022</strong> — Eureka Park exhibitor with
+                    Seoul Metropolitan Government; supported IR and buyer
+                    outreach for Korean AI startups in Las Vegas.
+                  </li>
+                  <li>
+                    <strong>Data Science and Consulting Academic Society</strong>
+                    — President (2022); faculty RA seminar on ML &amp; linear
+                    algebra, curriculum design, and capstone showcase to faculty.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="experience" class="section reveal" data-reveal>
+          <div class="section__header">
+            <h2 class="section__title">Experience</h2>
+          </div>
+          <div class="section__body">
+            <ol class="exp-list exp-list--cards">
+              <li class="exp-item card">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">Deloitte</h3>
+                  <p class="exp-item__dates">Jul 2024 – Present</p>
+                </div>
+                <p class="exp-item__meta">Seoul, Republic of Korea</p>
+                <p class="exp-item__subtitle">
+                  IT Audit Consultant, Audit &amp; Assurance (IT Audit, Data &amp;
+                  Analytics)
+                </p>
+                <ul class="resume-list">
+                  <li>
+                    Develop evaluation frameworks for
+                    <strong>AI</strong>, <strong>Cloud</strong>, and
+                    <strong>RPA</strong> systems at major financial institutions,
+                    analyzing system data to assess compliance where regulatory
+                    standards are limited.
+                  </li>
+                  <li>
+                    Automate controls testing across 20+ clients using
+                    <strong>SQL</strong>-based anomaly detection on access logs
+                    and journal entries, reducing audit cycle time across SAP and
+                    Oracle systems for K-IFRS and SOX compliance.
+                  </li>
+                  <li>
+                    Code <strong>Python</strong>/<strong>VBA</strong> automation
+                    tools for team-wide adoption, creating reusable templates that
+                    reduce manual testing time by 70% and enable non-technical
+                    auditors to run complex data validation steps.
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-item card">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">Deloitte</h3>
+                  <p class="exp-item__dates">Jan 2023 – Jul 2024</p>
+                </div>
+                <p class="exp-item__meta">Seoul, Republic of Korea</p>
+                <p class="exp-item__subtitle">
+                  Risk Consultant, Risk Advisory Group, FSI (Financial Services
+                  Industry Consulting)
+                </p>
+                <ul class="resume-list">
+                  <li>
+                    Designed data validation frameworks for operational risk
+                    platform serving 50+ departments across major banks,
+                    enabling live Basel III compliance monitoring and eliminating
+                    manual reconciliation processes.
+                  </li>
+                  <li>
+                    Built a <strong>Python</strong>-based <strong>NLP</strong>
+                    tool to extract and structure compliance requirements,
+                    processing 700+ regulatory texts in two days (previously 10
+                    days) across 5 concurrent projects.
+                  </li>
+                  <li>
+                    Delivered dashboards translating Key Risk Indicators and
+                    regulatory data into actionable insights following FSS
+                    standards, allowing senior executives to monitor risk through
+                    weekly leadership reporting.
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-item card">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">KPMG</h3>
+                  <p class="exp-item__dates">Oct 2022 – Dec 2022</p>
+                </div>
+                <p class="exp-item__meta">Seoul, Republic of Korea</p>
+                <p class="exp-item__subtitle">
+                  Digital Consulting Intern, Digital Group, Digital Delta
+                </p>
+                <ul class="resume-list">
+                  <li>
+                    Consolidated HR requirements from 25 departments into a
+                    master dataset, guiding data-driven platform evaluation and
+                    vendor selection.
+                  </li>
+                  <li>
+                    Evaluated 27 HR platforms analyzing features, pricing models,
+                    and implementation timelines to produce comparative reports
+                    that informed client <strong>cloud ERP</strong> vendor
+                    selection and implementation strategy.
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-item card">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">
+                    Ministry of the Interior and Safety
+                  </h3>
+                  <p class="exp-item__dates">Sep 2021 – Feb 2022</p>
+                </div>
+                <p class="exp-item__meta">
+                  Suwon, Republic of Korea · Suwon City Hall Smart City Division
+                </p>
+                <p class="exp-item__subtitle">Data Analyst Intern</p>
+                <ul class="resume-list">
+                  <li>
+                    Created a crime vulnerability model using
+                    <strong>AHP</strong> and <strong>K-means</strong> on 40,000+
+                    records, adopted for police patrol deployment; awarded 3rd
+                    place in city data competition.
+                  </li>
+                  <li>
+                    Deployed <strong>Tableau</strong> dashboards to the city’s
+                    open data platform and trained 20 officials on analytics
+                    tools, supporting data-driven urban policy across
+                    employment, environment, and health domains.
+                  </li>
+                  <li>
+                    Integrated credit-card, foot-traffic, and
+                    <strong>GIS</strong> data to reveal COVID-19’s uneven impact
+                    across Suwon and built a real-time dashboard that helped the
+                    city prioritize small-business support.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="activities" class="section reveal" data-reveal>
+          <div class="section__header">
+            <h2 class="section__title">Activities &amp; Leadership</h2>
+          </div>
+          <div class="section__body">
+            <div
+              class="exp-carousel"
+              id="activitiesCarousel"
+              aria-roledescription="carousel"
+              aria-label="Activities and leadership slides"
+            >
+              <button
+                type="button"
+                class="exp-carousel__btn exp-carousel__btn--prev"
+                id="activitiesCarouselPrev"
+                aria-controls="activitiesTrack"
+                aria-label="Previous activity"
+              >
+                <span aria-hidden="true">‹</span>
+              </button>
+              <div class="exp-carousel__viewport">
+                <ol
+                  class="exp-list exp-carousel__track"
+                  id="activitiesTrack"
+                >
+              <li class="exp-item card exp-carousel__slide">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">
+                    JA Asia Pacific – Company of the Year Competition 2026
+                  </h3>
+                  <p class="exp-item__dates">Mar 2026</p>
+                </div>
+                <p class="exp-item__meta">Seoul, Republic of Korea</p>
+                <p class="exp-item__subtitle">Judge, JA Korea</p>
+                <ul class="resume-list">
+                  <li>
+                    Evaluated student-led companies across Asia Pacific on
+                    entrepreneurship, financial literacy, and business execution;
+                    assessed pitch quality and growth scalability for regional
+                    competition finals.
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-item card exp-carousel__slide">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">
+                    Data Science and Consulting Academic Society
+                  </h3>
+                  <p class="exp-item__dates">2022</p>
+                </div>
+                <p class="exp-item__meta">Seoul, Republic of Korea</p>
+                <p class="exp-item__subtitle">
+                  President, Kyung Hee University
+                </p>
+                <ul class="resume-list">
+                  <li>
+                    Organized a seminar on ML and linear algebra as faculty RA;
+                    designed curriculum based on needs and facilitated
+                    knowledge-sharing sessions culminating in capstone projects
+                    presented to faculty.
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-item card exp-carousel__slide">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">
+                    CES 2022 (Consumer Electronics Show)
+                  </h3>
+                  <p class="exp-item__dates">2022</p>
+                </div>
+                <p class="exp-item__meta">Las Vegas, NV, United States</p>
+                <p class="exp-item__subtitle">
+                  Eureka Park Exhibitor, Seoul Metropolitan Government
+                </p>
+                <ul class="resume-list">
+                  <li>
+                    Represented Korean AI startups at CES 2022 by supporting IR
+                    pitching and buyer outreach, facilitating 258 international
+                    connections and converting 5 into active business
+                    partnerships.
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-item card exp-carousel__slide">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">
+                    Trusty, Women’s Health Tech Project
+                  </h3>
+                  <p class="exp-item__dates">2020</p>
+                </div>
+                <p class="exp-item__meta">Seoul, Republic of Korea</p>
+                <p class="exp-item__subtitle">
+                  Product Lead, Kyung Hee University
+                </p>
+                <ul class="resume-list">
+                  <li>
+                    Designed and conducted 300 user interviews with university
+                    students using anonymous qualitative research methods;
+                    translated insights into product roadmap.
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-item card exp-carousel__slide">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">
+                    International Development Volunteer Activities
+                  </h3>
+                  <p class="exp-item__dates">2019</p>
+                </div>
+                <p class="exp-item__meta">Laos PDR &amp; Seoul, Republic of Korea</p>
+                <p class="exp-item__subtitle">
+                  Vice President, Kyung Hee University
+                </p>
+                <ul class="resume-list">
+                  <li>
+                    Co-led cross-cultural educational initiative for 82 children
+                    in Laos in partnership with National University of Laos;
+                    designed and delivered community programs addressing local
+                    needs.
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-item card exp-carousel__slide">
+                <div class="exp-item__top">
+                  <h3 class="exp-item__title">
+                    Global Ambassador BUDDY, Office of International Affairs
+                  </h3>
+                  <p class="exp-item__dates">2018 – 2019</p>
+                </div>
+                <p class="exp-item__meta">Seoul, Republic of Korea</p>
+                <p class="exp-item__subtitle">
+                  International Buddy, Kyung Hee University
+                </p>
+                <ul class="resume-list">
+                  <li>
+                    Supported incoming exchange students in campus life, cultural
+                    adjustment, and academic integration through one-on-one
+                    mentoring and cultural exchange activities.
+                  </li>
+                </ul>
+              </li>
+                </ol>
+              </div>
+              <button
+                type="button"
+                class="exp-carousel__btn exp-carousel__btn--next"
+                id="activitiesCarouselNext"
+                aria-controls="activitiesTrack"
+                aria-label="Next activity"
+              >
+                <span aria-hidden="true">›</span>
+              </button>
+              <div class="exp-carousel__footer">
+                <p
+                  class="exp-carousel__counter"
+                  id="activitiesCarouselStatus"
+                  aria-live="polite"
+                >
+                  <span id="activitiesCarouselCurrent">1</span>
+                  /
+                  <span id="activitiesCarouselTotal">6</span>
+                </p>
+                <div
+                  class="exp-carousel__dots"
+                  id="activitiesCarouselDots"
+                  role="group"
+                  aria-label="Slide indicators"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="honors" class="section reveal" data-reveal>
+          <div class="section__header">
+            <h2 class="section__title">Honors &amp; Awards</h2>
+          </div>
+          <div class="section__body">
+            <ul class="awards-list awards-list--cards">
+              <li class="card">
+                <span class="awards-list__title"
+                  >Finalist, Employment Big Data and Visualization Contest (Korea
+                  Employment Information Service)</span
+                >
+                <span class="awards-list__year">2022</span>
+              </li>
+              <li class="card">
+                <span class="awards-list__title"
+                  >Top Prize, Public Big Data Analysis Competition (Ministry of
+                  Public Administration and Security)</span
+                >
+                <span class="awards-list__year">2021</span>
+              </li>
+              <li class="card">
+                <span class="awards-list__title"
+                  >3rd Prize, Crime Big Data Visualization and Idea Competition
+                  (Suwon City)</span
+                >
+                <span class="awards-list__year">2021</span>
+              </li>
+              <li class="card">
+                <span class="awards-list__title"
+                  >Excellence Prize, SW Item Startup Idea Competition (Kyung Hee
+                  University SW Venture Institute)</span
+                >
+                <span class="awards-list__year">2020</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="skills" class="section reveal" data-reveal>
+          <div class="section__header">
+            <h2 class="section__title">Skills</h2>
+          </div>
+          <div class="section__body skills skills--grid">
+            <dl class="skills-block card">
+              <dt>Programming languages</dt>
+              <dd>
+                Python (Pandas, NumPy, scikit-learn, NLTK), R (statistical
+                modeling, clustering), MS SQL, Java
+              </dd>
+            </dl>
+            <dl class="skills-block card">
+              <dt>Data visualization &amp; automation</dt>
+              <dd>Tableau, Power BI, Google Analytics, MS Excel (VBA)</dd>
+            </dl>
+            <dl class="skills-block card">
+              <dt>Certifications</dt>
+              <dd>Tableau Desktop Certified, SQL Developer (Korea)</dd>
+            </dl>
+            <dl class="skills-block card">
+              <dt>Research methods</dt>
+              <dd>Qualitative interview design, survey development</dd>
+            </dl>
+          </div>
+        </section>
+
+        <section id="connect" class="section section--last reveal" data-reveal>
+          <div class="section__header">
+            <h2 class="section__title">Connect</h2>
+          </div>
+          <div class="section__body">
+            <p>
+              Reach out for collaborations, ideas, or conversations about the
+              move from Seoul to Pittsburgh.
+            </p>
+            <p>
+              <a href="mailto:yoobinkim27@gmail.com">yoobinkim27@gmail.com</a>
+              ·
+              <a href="tel:+821068890944">(+82) 10-6889-0944</a>
+              · Seoul, Republic of Korea
+            </p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/yoobinkim27"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+              ·
+              <a
+                href="https://github.com/Olivia-Yoob"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              · <a href="./">Portfolio</a>
+            </p>
+            <p>
+              Open to conversations on analytics, product, and moving from
+              audit-minded problem framing into data-driven product work.
+            </p>
+            <p class="footer-copy">
+              © <span id="year"></span> Olivia (Yoobin) Kim
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
